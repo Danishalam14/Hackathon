@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ChatBot</title>
+
+  <!-- Linking FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Linking the CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <div id="main">
+        <h2>ChatBot</h2>
+
+        <!-- Message container -->
+        <div id="msg">
+            <div id="robot">
+                <div class="bot"></div>
+                <h3>Aco ChatBot</h3>
+            </div>
+        </div>
+
+        <!-- Input box for sending messages -->
+        <div class="input">
+            <input type="text" id="msg_send" placeholder="New Message"> 
+            <button class="send" id="reply">Send <i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Axios library for making HTTP requests -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <!-- Linking the JS file -->
+    <script src="index.js"></script>
+</body>
+</html>
